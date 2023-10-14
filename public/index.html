@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background: url('../img/galaxy-3608029.jpg') no-repeat center center fixed;
+            background: url('./img/galaxy-3608029.jpg') no-repeat center center fixed;
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
             display: flex;
@@ -76,7 +76,7 @@
                 // Realizar una solicitud POST a la API de inicio de sesión
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:3001/login", // La URL de tu API de inicio de sesión
+                    url: "https://backend-login.up.railway.app/login", // La URL de tu API de inicio de sesión
                     data: JSON.stringify({ email: email, contrasena: password }),
                     contentType: "application/json",
                     success: function (data) {
